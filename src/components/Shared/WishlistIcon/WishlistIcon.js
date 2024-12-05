@@ -4,7 +4,7 @@ import classNames from "classnames";
 import { Wishlist } from "@/api";
 import { useAuth } from "@/hooks";
 import styles from "./WishlistIcon.module.scss";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 const wishlistCtrl = new Wishlist();
 
@@ -14,7 +14,7 @@ export function WishlistIcon(props) {
   const [hasWishlist, setHasWishlist] = useState(null);
   const { posterId, className, removeCallback } = props;
   const { user } = useAuth();
-  // const router = useRouter();
+  const router = useRouter();
 
   useEffect(() => {
     (async () => {

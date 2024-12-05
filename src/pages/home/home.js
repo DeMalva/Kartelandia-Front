@@ -6,13 +6,15 @@ import { useCart } from "@/hooks";
 
 // En este archivo insertamos todos los componentes que van a ir
 // en la pagina principal. Podemos ordenarlos y colocarlos como queramos
+
+// La constante categoriesId es para elegir una categoria a mostrar
 const categoriesId = {
-  Accion: 8,
-  Aventura: 6,
-  Comedia: 7,
-  Terror: 9,
-  infantil: 11,
-  romantica: 10,
+  Accion: 1,
+  Aventura: 2,
+  Comedia: 3,
+  Terror: 6,
+  infantil: 5,
+  // romantica: 10,
 };
 
 export default function HomePage() {

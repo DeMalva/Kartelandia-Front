@@ -4,11 +4,11 @@ import { GridPosters } from "@/components/Shared";
 
 const posterCtrl = new Poster();
 // const limit = 9;
-// const categoryId = null;
+const categoryId = null;
 
 export function LatestPosters(props) {
-  const [posters, setPosters] = useState(null);
   const { title, limit = 9, categoryId = null } = props;
+  const [posters, setPosters] = useState(null);
   //console.log(posters);
 
   useEffect(() => {

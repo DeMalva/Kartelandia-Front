@@ -30,7 +30,7 @@ export function Gallery(props) {
       return <Image src={`${ENV.SERVER_HOST}${screenshots[index].url}`} />;
     },
   };
-  console.log(screenshots.name);
+  // console.log(screenshots.name);
 
   return (
     <>
