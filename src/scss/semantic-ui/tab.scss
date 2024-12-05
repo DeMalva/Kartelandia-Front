@@ -1,0 +1,31 @@
+@use "../colors";
+
+.ui.menu.secondary.pointing {
+  border-bottom: 2px solid colors.$border-primary;
+
+  a.item {
+    color: colors.$text-primary;
+    font-weight: bold !important;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: colors.$secondary-hover !important;
+      border-color: colors.$primary !important;
+    }
+
+    &.active {
+      color: colors.$secondary-hover;
+      border-color: colors.$primary;
+    }
+
+    > i {
+      color: colors.$primary-hover;
+    }
+  }
+}
+
+.ui.tab.segment.active {
+  background-color: colors.$background-info;
+  padding: 20px 0 0 0;
+}

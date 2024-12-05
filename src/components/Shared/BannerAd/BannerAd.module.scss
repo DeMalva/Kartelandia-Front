@@ -1,0 +1,51 @@
+@use "../../../scss/index.scss";
+@use "../../../scss/colors.scss";
+
+.container {
+  display: flex;
+  position: relative;
+  height: 500px;
+  background-color: #c2bdb9;
+  background-image: radial-gradient(
+    circle at center bottom,
+    #c2bdb9 0,
+    #918378 29%,
+    #272727 73%
+  );
+
+  &::after {
+    content: "";
+    background-color: colors.$background-primary;
+    position: absolute;
+    bottom: -1px;
+    height: 60px;
+    width: 100%;
+    clip-path: polygon(0 100%, 100% 100%, 0 0);
+  }
+}
+
+.containerImage {
+  display: flex !important;
+  justify-content: flex-end;
+  padding-top: 30px;
+}
+
+.infoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  
+  h2{
+  color: colors.$text-secondary !important;
+}
+  h3 {
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: colors.$text-secondary !important;
+}
+}

@@ -1,0 +1,11 @@
+@use "../../../scss/index.scss";
+@use "../../../scss/colors.scss";
+
+.noResult {
+  text-align: center;
+  margin-top: 50px;
+
+  p {
+    color: colors.$text-secondary;
+  }
+}

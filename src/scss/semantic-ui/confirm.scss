@@ -1,0 +1,28 @@
+@use "../colors";
+
+.ui.modal.confirm.visible.active {
+  background-color: colors.$background-primary;
+  border-radius: 12px;
+  overflow: hidden;
+
+  > .content {
+    background-color: colors.$background-primary;
+    color: colors.$text-primary;
+    font-size: 18px;
+    padding: 20px 20px 0 20px !important;
+  }
+
+  > .actions {
+    background-color: colors.$background-primary;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > .ui.button {
+      width: 48%;
+      padding: 15px !important;
+      margin: 0;
+    }
+  }
+}

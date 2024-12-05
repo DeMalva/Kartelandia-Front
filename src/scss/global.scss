@@ -1,0 +1,39 @@
+@use "index.scss";
+@use "semantic-ui/index.scss" as index2;
+@use "colors";
+
+
+* {
+  color: colors.$text-primary;
+}
+
+body {
+  margin: 0;
+  background-color: colors.$background-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: colors.$text-primary;
+
+  &:hover {
+    color: colors.$primary;
+  }
+}
+
+
+
+
+
+

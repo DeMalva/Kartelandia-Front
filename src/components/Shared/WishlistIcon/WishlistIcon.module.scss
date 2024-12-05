@@ -1,0 +1,11 @@
+@use "../../../scss/index.scss";
+@use "../../../scss/colors.scss";
+
+.wishlistIcon {
+  color: colors.$primary;
+
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+}

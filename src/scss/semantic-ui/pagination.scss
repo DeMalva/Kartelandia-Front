@@ -1,0 +1,20 @@
+@use "../colors";
+
+.ui.pagination {
+  border-color: colors.$border-primary;
+  background-color: colors.$background-quaternary;
+
+  > .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: colors.$text-primary;
+
+    &.active,
+    &:focus,
+    &:hover {
+      background-color: colors.$background-tertiary !important;
+      color: colors.$text-primary !important;
+    }
+  }
+}

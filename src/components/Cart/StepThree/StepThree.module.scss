@@ -1,0 +1,21 @@
+@use "../../../scss/index.scss";
+@use "../../../scss/colors.scss";
+
+.stepThree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > i {
+    font-size: 70px;
+    color: colors.$success;
+  }
+
+  > h2 {
+    margin-bottom: 20px;
+  }
+
+  > a {
+    width: 300px;
+  }
+}

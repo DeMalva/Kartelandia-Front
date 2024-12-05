@@ -1,0 +1,42 @@
+@use "../colors";
+
+.ui.form {
+  label {
+    position: relative;
+    bottom: 8px;
+  }
+
+  .field {
+    .ui.input {
+      input {
+        border: 2px solid colors.$border-primary;
+        background-color: colors.$background-secondary;
+        color: colors.$text-primary;
+        padding: 14px;
+        border-radius: 6px;
+
+        &:hover,
+        &:active,
+        &:focus {
+          border-color: colors.$secondary-hover;
+        }
+      }
+    }
+  }
+
+  .field.error {
+    .ui.input {
+      input {
+        border-color: colors.$danger;
+      }
+    }
+  }
+
+  .ui.button[type="submit"] {
+    background-color: colors.$primary;
+    color: colors.$text-primary;
+    margin: 0;
+    padding: 15.5px 30px;
+    border-radius: 6px;
+  }
+}
