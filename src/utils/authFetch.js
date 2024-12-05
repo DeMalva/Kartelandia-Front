@@ -10,7 +10,7 @@ export async function authFetch(url, params) {
   // Creamos un Logout para salir de la sesion y colcer a la pagina de inicio
   const logout = () => {
     tokenCtrl.removeToken();
-    // window.location.replace("/");
+    window.location.replace("/");
   };
 
   // Si no existe el token o expira, nos cierra la sesion con el Logout
