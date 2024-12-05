@@ -1,6 +1,6 @@
 export const ENV = {
-  SERVER_HOST: "http://kartelandia.up.railway.app",
-  API_URL: "http://kartelandia.up.railway.app/api",
+  SERVER_HOST: "https://kartelandia.up.railway.app",
+  API_URL: "https://kartelandia.up.railway.app/api",
   // SERVER_HOST: "http://127.0.0.1:1337",
   // API_URL: "http://127.0.0.1:1337/api",
   ENDPOINTS: {
