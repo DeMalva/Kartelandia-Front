@@ -50,22 +50,21 @@ export function WishlistIcon(props) {
 
   if (hasWishlist === null) return null;
 
-  // const goToLogin = () => router.push("/join/sign-in");
-  // const goToWish = () => (hasWishlist ? deleteWishlist : addWishlist);
-  // const goToCart = () => {
-  //   if (!user) goToLogin();
-  //   else goToWish();
-  // };
-
   return (
-    <Icon
-      name={hasWishlist ? "heart" : "heart outline"}
-      // onClick={goToCart}
-      // onClick={!user ? router.push("/") }
-      onClick={hasWishlist ? deleteWishlist : addWishlist}
-      className={classNames(styles.wishlistIcon, {
-        [className]: className,
-      })}
-    />
+    // Aqui corregimos un error que provocaba el user.Id, comprobando si primero hay usuario
+    // y si lo hay pintamos el corazon.
+    <>
+      {user ? (
+        <Icon
+          name={hasWishlist ? "heart" : "heart outline"}
+          // onClick={goToCart}
+          // onClick={!user ? router.push("/") }
+          onClick={hasWishlist ? deleteWishlist : addWishlist}
+          className={classNames(styles.wishlistIcon, {
+            [className]: className,
+          })}
+        />
+      ) : null}
+    </>
   );
 }

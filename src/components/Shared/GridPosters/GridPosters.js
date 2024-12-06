@@ -20,17 +20,18 @@ export function GridPosters(props) {
         >
           <div>
             <img src={`${enlaceStrapi}${poster.cover.url}`} />
-            {poster.discount > 0 && (
+            {/* {poster.discount > 0 && (
               <Label.Discount className={styles.discount}>
                 {`-${poster.discount}%`}
               </Label.Discount>
-            )}
+            )} */}
           </div>
 
           <div>
             <span>{poster.name}</span>
             <span className={styles.price}>
-              {fn.calcDiscountedPrice(poster.price, poster.discount)}€
+              {poster.price}
+              {/* {fn.calcDiscountedPrice(poster.price, poster.discount)}€ */}
             </span>
           </div>
         </Link>

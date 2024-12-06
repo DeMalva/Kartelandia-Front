@@ -42,16 +42,14 @@ export function BannerLastPosterPublished() {
 
       <Link className={styles.infoContainer} href={poster.slug}>
         <Container>
-          <span className={styles.date}>
-            {poster.release}
-            {/* {DateTime.fromISO(releaseDate).minus({ days: 1 }).toRelative()} */}
-          </span>
+          <span className={styles.date}>{poster.release}</span>
 
           <h2>{poster.name}</h2>
 
           <p className={styles.price}>
-            <span className={styles.labelDiscount}>-{poster.discount}%</span>
-            {/* <Label.Discount>-{poster.discount}%</Label.Discount> */}
+            <Label.Discount>-{poster.discount}%</Label.Discount>
+            {/* <span className={styles.labelDiscount}>-{poster.discount}%</span> */}
+
             {<span className={styles.finalPrice}>{price}€</span>}
           </p>
         </Container>

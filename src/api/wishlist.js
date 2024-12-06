@@ -5,6 +5,7 @@ export class Wishlist {
   // La funcion check es para comprobar si esta en la lista de deseos o no
   async check(userId, posterId, documentId) {
     try {
+      // Dos filtros para buscar el poster en favoritos de un determinado usuario
       const filterUser = `filters[user][id][$eq][0]=${userId}`;
       const filterPoster = `filters[poster][id][$eq][1]=${posterId}`;
       const urlParams = `${filterUser}&${filterPoster}`;

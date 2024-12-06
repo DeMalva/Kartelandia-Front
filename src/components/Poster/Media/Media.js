@@ -5,7 +5,7 @@ import { Separator } from "@/components/Shared";
 
 export function Media(props) {
   const { video, screenshots } = props;
-  console.log(props);
+  // console.log(props);
 
   return (
     <Container>
