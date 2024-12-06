@@ -21,6 +21,10 @@ export default function AccountPage() {
   const router = useRouter();
   const [reload, setReload] = useState(false);
 
+  // Para vaciar el local storage al pulsar el boton de salir
+  const remLocal = () => {
+    localStorage.removeItem("cart");
+  };
   // Si no hay usuario logueado nos saca a la pagina de inicio
   if (!user) {
     router.push("/");
@@ -79,6 +83,8 @@ export default function AccountPage() {
         key: 21,
         icon: "log out",
         content: "",
+        onClick: remLocal(),
+
         onClick: logout, // Si pulsamo salimos de la sesion y colvemos a home
       },
     },
